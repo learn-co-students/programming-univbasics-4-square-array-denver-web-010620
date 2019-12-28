@@ -1,3 +1,11 @@
 def square_array(array)
-  # your code here
+  counter = 0
+  newArray = []
+  while array[counter] do
+    numToSquare = array[counter]
+    numToSquare *= numToSquare
+    newArray.push(numToSquare)
+    counter += 1
+  end
+  p newArray
 end
